@@ -11,10 +11,16 @@ Este proyecto utiliza el scraping web para obtener el informe actual sobre el í
 - redis
 - Entorno linux (por limitaciones de uvicorn en windows)
 
+## Instalación
+
+- Instalar las dependencias: `pip install -r requirements.txt`
+`playwright install`
+- Ejecutar el proyecto: `uvicorn main:app`
+
 ## Uso
 
 El servidor está disponible en el puerto 8000.
-AL acceder a localhost:8000/ipc el servidor devuelve  el siguiente json:
+AL acceder a localhost:8000/ipc, el servidor devuelve  el siguiente json:
 ```
 {
     "fecha": "fecha de la última actualización del      informe",
